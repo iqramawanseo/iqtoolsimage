@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a wide range of online tools for images, PDFs, and more. Free, fast, and easy-to-use tools for all your needs.">
+    <meta name="keywords" content="image tools, PDF tools, online tools, free tools, compress images, edit PDFs">
+    <meta name="author" content="Iqram">
+    <title>IQ SEO Tools - Your Ultimate Online Toolkit</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9; /* Light background */
+            color: #333; /* Dark text */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Tagline */
+        .top-tagline {
+            text-align: center;
+            padding: 10px 0;
+            background: #000; /* Black background */
+            color: #fff; /* White text */
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Header with Black Background (Smaller) */
+        header {
+            background: #000; /* Black background */
+            color: #fff;
+            padding: 30px 0; /* Reduced height */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 7px solid red; /* Red line at the bottom */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Smaller heading */
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            color: #fff; /* White heading */
+            animation: float 3s ease-in-out infinite; /* Floating animation */
+        }
+
+        header p {
+            font-size: 1.2rem; /* Smaller text */
+            margin: 10px 0 0;
+            position: relative;
+            z-index: 1;
+            color: #fff; /* White text */
+            animation: float 3s ease-in-out infinite; /* Floating animation */
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Moves text up */
+            }
+        }
+
+        /* Ad Space */
+        .ad-space {
+            text-align: center;
+            padding: 20px;
+            background: #fff; /* White background */
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-ad {
+            margin-top: 20px;
+        }
+
+        .bottom-ad {
+            margin-bottom: 20px;
+        }
+
+        /* Tools Section */
+        .tools {
+            padding: 10px 0;
+            background: #fff; /* White background */
+        }
+
+        .tools h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #000; /* Black heading */
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards */
+            gap: 20px;
+        }
+
+        /* Different Colors for Tool Cards */
+        .tool-card {
+            background: #fff; /* White card background */
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .tool-card img {
+            width: 80px; /* Smaller icon */
+            height: 80px; /* Smaller icon */
+            margin-bottom: 15px; /* Reduced margin */
+        }
+
+        .tool-card h3 {
+            font-size: 1.2rem; /* Smaller heading */
+            margin: 10px 0;
+            color: #000; /* Black heading */
+        }
+
+        .tool-card p {
+            font-size: 0.9rem; /* Smaller text */
+            color: #666; /* Gray text */
+            margin: 10px 0;
+        }
+
+        .tool-card .btn {
+            background: #2575fc; /* Blue button */
+            color: #fff;
+            padding: 8px 16px; /* Smaller button */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem; /* Smaller font */
+            display: inline-block;
+            margin-top: 15px; /* Reduced margin */
+            transition: background 0.3s ease;
+        }
+
+        .tool-card .btn:hover {
+            background: #1a5bbf; /* Darker blue on hover */
+        }
+
+        /* Different Colors for Tool Cards */
+        .tool-card:nth-child(1) {
+            background: #ffebee; /* Light red */
+        }
+
+        .tool-card:nth-child(2) {
+            background: #e3f2fd; /* Light blue */
+        }
+
+        .tool-card:nth-child(3) {
+            background: #e8f5e9; /* Light green */
+        }
+
+        .tool-card:nth-child(4) {
+            background: #fff3e0; /* Light orange */
+        }
+
+        .tool-card:nth-child(5) {
+            background: #f3e5f5; /* Light purple */
+        }
+
+        .tool-card:nth-child(6) {
+            background: #e0f7fa; /* Light cyan */
+        }
+
+        /* Footer */
+        footer {
+            background: #000; /* Black background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #2575fc; /* Blue link */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #1a5bbf; /* Darker blue on hover */
+        }
+
+        /* Hyperlink Styling */
+        .tool-card-link {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color */
+            display: block; /* Make the entire card clickable */
+        }
+
+        .tool-card-link:hover .tool-card {
+            transform: translateY(-10px); /* Add hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Tagline -->
+    <div class="top-tagline">
+        IQ SEO Tools - Your Ultimate Online Toolkit
+    </div>
+
+    <!-- Header with Black Background (Smaller) -->
+    <header>
+        <div class="container">
+            <h1>All-in-One Online Tools</h1>
+            <p>Free, fast, and easy-to-use tools for all your needs.</p>
+        </div>
+    </header>
+
+    <!-- Ad Space (Top) -->
+    <div class="ad-space top-ad">
+        <!-- Insert Adsterra or Google AdSense Ad Unit Code Here -->
+        <p>Ad Space (Top)</p>
+    </div>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2>Our Tools</h2>
+            <div class="tool-grid">
+                <!-- Image Tools -->
+                <a href="image-compressor.html" class="tool-card-link">
+                    <div class="tool-card">
+                        <img src="images/image-compressor-icon.png" alt="Image Tools">
+                        <h3>Image Compressor</h3>
+                        <p>Compress images without losing quality.</p>
+                        <a href="image-compressor.html" class="btn">Explore</a>
+                    </div>
+                </a>
+
+                <!-- PDF Tools -->
+                <div class="tool-card">
+                    <img src="images/pdf-maker-icon.png" alt="PDF Tools">
+                    <h3>PDF Maker</h3>
+                    <p>Create PDFs from any file format.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+
+                <div class="tool-card">
+                    <img src="images/pdf-to-word-icon.png" alt="PDF Tools">
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDFs to editable Word documents.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+
+                <!-- More Tools -->
+                <div class="tool-card">
+                    <img src="images/video-compressor-icon.png" alt="Video Tools">
+                    <h3>Video Compressor</h3>
+                    <p>Compress videos without losing quality.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+
+                <div class="tool-card">
+                    <img src="images/audio-extractor-icon.png" alt="Audio Tools">
+                    <h3>Audio Extractor</h3>
+                    <p>Extract audio from video files.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+
+                <div class="tool-card">
+                    <img src="images/document-converter-icon.png" alt="Document Tools">
+                    <h3>Document Converter</h3>
+                    <p>Convert documents to various formats.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space (Bottom) -->
+    <div class="ad-space bottom-ad">
+        <!-- Insert Adsterra or Google AdSense Ad Unit Code Here -->
+        <p>Ad Space (Bottom)</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ by <a href="#" target="_blank">Iqram</a></p>
+            <p>&copy; 2023 All-in-One Online Tools. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
